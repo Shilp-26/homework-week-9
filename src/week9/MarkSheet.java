@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class MarkSheet {
 
     public static void main(String[] args) {
-        String result = null;
+        String result;
         String grade = null;
 
         Scanner sc = new Scanner(System.in);
@@ -41,11 +41,13 @@ public class MarkSheet {
         int total = math + science + english;
         int avg = total / 3;
 
-        if (avg >= 35) {
+
+        if (avg >= 35 && math >=35 && english>=35 && science>=35 ) {
            result = "Pass";
         } else {
             result = "Fail";
         }
+
          if (avg >= 80) {
              grade = "A+";
         } else if (avg >= 60) {
@@ -74,7 +76,7 @@ public class MarkSheet {
         System.out.println("|                              |");
         System.out.println("|    Percentage  :     " + avg + "      |");
         System.out.println("|    Result      :     " + result + "    |");
-        System.out.println("|    Grade       :     " + grade + "    |");
+        System.out.println("|    Grade       :     " + grade + "        |");
         System.out.println("-------------------------------");
 
 

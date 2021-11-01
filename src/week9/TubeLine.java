@@ -14,8 +14,8 @@ public class TubeLine {
         list.put("Aldgate ", "Metropolitan line");
         list.put("Aldgate East", "Hammersmith and city line, Distric Line");
         list.put("Angel", "Northern line");
-        list.put("Baker Street", "Metropolitan line, Bakerloo line, Central Line,\n " +
-                "Hammersmith and city line, Jubilee line");
+        list.put("Baker Street", "Metropolitan line, Bakerloo line, Central Line," +
+                " Hammersmith and city line, Jubilee line");
         list.put("Bank", "Waterloo and city line, Northern Line, Central Line");
         list.put("Barbican", "Hammersmith and city line, Metropolitan Line");
         list.put("Battersea power station", "Northern Line");
@@ -27,19 +27,19 @@ public class TubeLine {
         list.put("Chancery Lane", "Central Line");
         list.put("Charing Cross", "Bakerloo Line, Northern Line");
         list.put("Covent garden", "Piccadilly Line");
-        list.put("Edgware Road", "Hammersmith and city line, Circle Line,\n" +
+        list.put("Edgware Road", "Hammersmith and city line, Circle Line," +
                 " District Line");
-        list.put("Embankment", "District Line, Bakerloo Line, Northern Line,\n" +
+        list.put("Embankment", "District Line, Bakerloo Line, Northern Line," +
                 " Circle Line");
         list.put("Euston", "Northern Line, Victoria Line");
-        list.put("Euston Sqaure", "Hammersmith and city line, Metropolitan Line,\n" +
+        list.put("Euston Sqaure", "Hammersmith and city line, Metropolitan Line," +
                 " Circle Line");
-        list.put("Farringdon", "Hammersmith and city line, Metropolitan Line,\n" +
+        list.put("Farringdon", "Hammersmith and city line, Metropolitan Line," +
                 " Circle Line");
 
 
         for (Map.Entry<String, String> tube : list.entrySet()) {
-            System.out.println(tube.getKey() + " " + tube.getValue());
+            System.out.println(tube.getKey()+"\t" + " " + tube.getValue());
         }
     }
 }
